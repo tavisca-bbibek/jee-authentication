@@ -19,19 +19,9 @@ import com.tavisca.javatraining.jee.repository.UserDaoDB;
 @WebServlet("/register")
 public class RegisterServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	
-	
-       
-	@Override
-	public void init() throws ServletException {
-		super.init();
-		getServletContext().setAttribute("userDao", new UserDaoDB());
-	}
-
-
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		UserDao userDao = (UserDao) getServletContext().getAttribute("userDao");
+		UserDao userDao = new UserDaoDB();
 		
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
