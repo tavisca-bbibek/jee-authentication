@@ -1,0 +1,38 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+}
+
+body{
+	background-color: white;
+}
+
+h1 {
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-left: 16px;
+	color: orange;
+}
+
+ul.menu {
+	background-color: orange;
+	list-style-type: none;
+	overflow:hidden;
+}
+
+ul.menu li{
+	float:left;
+}
+
+ul.menu li a{
+	display:block;
+	color: white;
+	text-align: center;
+  	padding: 14px 16px;
+	text-decoration:none;
+}
+
+ul.menu li a:hover{
+	background-color: darkorange;
+}
